@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/samples/Greeting/">
+    <Project Path="samples/Greeting/src/WebApi.Modules.Greeting/WebApi.Modules.Greeting.csproj" />
+    <Project Path="samples/Greeting/src/WebApi.Modules.Greeting.Client/WebApi.Modules.Greeting.Client.csproj" />
+  </Folder>
+</Solution>

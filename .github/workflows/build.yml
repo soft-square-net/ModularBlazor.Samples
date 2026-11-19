@@ -1,0 +1,36 @@
+# Builds every sample against the platform's packages (soft-square-net GitHub Packages feed, version pinned in
+# global.json) and keeps each sample's build output as an artifact.
+name: Build
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      # NuGet.Config reads the feed's token from here.
+      GITHUB_PACKAGES_TOKEN: ${{ secrets.PACKAGES_TOKEN || secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Build
+        run: dotnet build ModularBlazor.Samples.slnx -c Release
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: samples
+          path: samples/*/src/*/bin/Release/net10.0/

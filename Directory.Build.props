@@ -1,0 +1,12 @@
+<Project>
+  <!-- The platform's naming: every assembly and root namespace is prefixed. -->
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <SoftSquarePrefix>soft.square.net</SoftSquarePrefix>
+    <AssemblyName>$(SoftSquarePrefix).$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>$(SoftSquarePrefix).$(MSBuildProjectName)</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+</Project>
