@@ -1,6 +1,12 @@
 <Solution>
-  <Folder Name="/samples/Greeting/">
-    <Project Path="samples/Greeting/src/WebApi.Modules.Greeting/WebApi.Modules.Greeting.csproj" />
-    <Project Path="samples/Greeting/src/WebApi.Modules.Greeting.Client/WebApi.Modules.Greeting.Client.csproj" />
-  </Folder>
+  <Project Path="samples/Dashboard/src/Module.Dashboard/Module.Dashboard.csproj" />
+  <Project Path="samples/Greeting/src/WebApi.Modules.Greeting.Client/WebApi.Modules.Greeting.Client.csproj" />
+  <Project Path="samples/Greeting/src/WebApi.Modules.Greeting/WebApi.Modules.Greeting.csproj" />
+  <Project Path="samples/Inventory/src/WebApi.Modules.Inventory.Application/WebApi.Modules.Inventory.Application.csproj" />
+  <Project Path="samples/Inventory/src/WebApi.Modules.Inventory.Client/WebApi.Modules.Inventory.Client.csproj" />
+  <Project Path="samples/Inventory/src/WebApi.Modules.Inventory.Domain/WebApi.Modules.Inventory.Domain.csproj" />
+  <Project Path="samples/Inventory/src/WebApi.Modules.Inventory.Infrastructure/WebApi.Modules.Inventory.Infrastructure.csproj" />
+  <Project Path="samples/Pulse/src/WebApi.Modules.Pulse.Client/WebApi.Modules.Pulse.Client.csproj" />
+  <Project Path="samples/Pulse/src/WebApi.Modules.Pulse/WebApi.Modules.Pulse.csproj" />
+  <Project Path="samples/Reports/src/Module.Reports/Module.Reports.csproj" />
 </Solution>

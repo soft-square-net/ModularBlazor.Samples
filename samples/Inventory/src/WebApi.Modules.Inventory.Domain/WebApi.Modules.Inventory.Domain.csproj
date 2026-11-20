@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Sdk Name="soft.square.net.ModularBlazor.Module.Sdk" />
+
+  <!-- Inventory domain: the StockItem aggregate and its rules. References: WebApi.SharedKernel (the Module SDK). -->
+
+</Project>

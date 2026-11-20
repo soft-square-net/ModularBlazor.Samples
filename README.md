@@ -3,19 +3,18 @@
 Small demo modules for the [ModularBlazor](https://github.com/soft-square-net/ModularBlazor.Platform) platform. Each one shows one way to build a module and is
 released as its own bundle; they share a repo because they are examples, not products.
 
-> **Status: moving in.** Samples move here from the platform repo one at a time and are removed from the platform in
-> the same step. The table says where each one is.
+> **Status: moved in.** Every sample moved here from the platform repo and builds against the platform packages.
 
-| Sample | Shows | Where |
+| Sample | Shows | Folder |
 | --- | --- | --- |
-| Greeting | the smallest host module (one project, `IRuntimeModule` + endpoints) and its API client | here: [`samples/Greeting`](samples/Greeting) |
-| Inventory | a layered module (Domain, Application, Infrastructure) storing data in each tenant's own database, and its API client | [`src/WebApi/Modules/Custom/Inventory`](https://github.com/soft-square-net/ModularBlazor.Platform/tree/main/src/WebApi/Modules/Custom/Inventory) |
-| Pulse | a host module with a background service and its own ASP.NET Core pipeline | [`src/WebApi/Modules/Custom/WebApi.Modules.Pulse`](https://github.com/soft-square-net/ModularBlazor.Platform/tree/main/src/WebApi/Modules/Custom/WebApi.Modules.Pulse) and `.Client` |
-| Dashboard | a client-only module (a .dll), lazy loaded | [`modules/client/Module.Dashboard`](https://github.com/soft-square-net/ModularBlazor.Platform/tree/main/modules/client/Module.Dashboard) |
-| Reports | a client-only module shipped as a .nupkg | [`modules/client/Module.Reports`](https://github.com/soft-square-net/ModularBlazor.Platform/tree/main/modules/client/Module.Reports) |
+| Greeting | the smallest host module (one project, `IRuntimeModule` + endpoints) and its API client | [`samples/Greeting`](samples/Greeting) |
+| Inventory | a layered module (Domain, Application, Infrastructure) storing data in each tenant's own database, and its API client | [`samples/Inventory`](samples/Inventory) |
+| Pulse | a host module with a background service and its own ASP.NET Core pipeline | [`samples/Pulse`](samples/Pulse) |
+| Dashboard | a client-only module (a .dll), lazy loaded | [`samples/Dashboard`](samples/Dashboard) |
+| Reports | a client-only module shipped as a .nupkg | [`samples/Reports`](samples/Reports) |
 
-Dashboard and Reports are seeded by the platform today as core client modules; once they move here they become
-ordinary installable samples.
+Dashboard and Reports used to be seeded by the platform as core client modules; here they are ordinary installable
+samples: upload the .dll (Dashboard) or the .nupkg from `dotnet pack` (Reports) in the admin area.
 
 ## Layout
 

@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Sdk Name="soft.square.net.ModularBlazor.Module.Sdk" />
+
+  <!-- Inventory use cases and specifications. References: Domain, plus WebApi.Contracts and the shared kernel (the Module SDK). -->
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebApi.Modules.Inventory.Domain\WebApi.Modules.Inventory.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
