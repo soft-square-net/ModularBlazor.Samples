@@ -1,0 +1,3 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+  <Sdk Name="soft.square.net.ModularBlazor.Module.Sdk" />
+</Project>
