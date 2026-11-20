@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Sdk Name="soft.square.net.ModularBlazor.Module.Sdk" />
+
+  <!--
+    The smallest runtime module: one project. The Module SDK adds ASP.NET Core, WebApi.Contracts and Carter, all
+    provided by the host at runtime, so they are compiled against and never copied to the output. Zip the build output
+    (bin/<Configuration>/net10.0) and upload it in the admin area, or POST it to /api/admin/modules.
+  -->
+
+  <PropertyGroup>
+    <!-- Copies private package dependencies (Humanizer) into the output and writes the .deps.json the loader resolves with. -->
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Private dependency: loads into the module's own load context. -->
+    <PackageReference Include="Humanizer.Core" Version="2.14.1" />
+  </ItemGroup>
+
+</Project>
